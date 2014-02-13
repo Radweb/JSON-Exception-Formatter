@@ -12,7 +12,7 @@ However once you're not in debug mode (ie. a production environment), a whole HT
 
 With this package, when you're not in debug mode, exceptions will be output as JSON (only without debug information like the file name & line number).
 
-**Note** This does NOT affect HTML requests. Only AJAX/JSON requests are altered.
+**NOTE** This does NOT affect HTML requests. Only AJAX/JSON requests are altered.
 
 ## Installation
 
