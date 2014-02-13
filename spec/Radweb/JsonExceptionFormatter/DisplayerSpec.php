@@ -50,7 +50,7 @@ class DisplayerSpec extends ObjectBehavior {
 
 	function it_wraps_the_result_from_formatter(Exception $exception, $formatter)
 	{
-		$formatter->formatDebug($exception)->willReturn(['error' => 'foo bar']);
+		$formatter->formatDebug($exception)->willReturn(array('error' => 'foo bar'));
 
 		$this->display($exception)->getContent()->shouldBe('{"error":"foo bar"}');
 	}
@@ -71,7 +71,7 @@ class DisplayerSpec extends ObjectBehavior {
 	function it_uses_the_headers_from_an_HttpExceptionInterface(HttpException $exception)
 	{
 		$exception->getStatusCode()->willReturn(401);
-		$exception->getHeaders()->willReturn(['Foo' => 'Bar']);
+		$exception->getHeaders()->willReturn(array('Foo' => 'Bar'));
 
 		$this->display($exception)->headers->get('Foo')->shouldBe('Bar');
 	}
