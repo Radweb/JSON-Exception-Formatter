@@ -1,0 +1,4 @@
+suites:
+  json_exception_handler:
+    namespace: Radweb\JsonExceptionFormatter
+    spec_prefix:

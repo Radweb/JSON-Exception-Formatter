@@ -1,0 +1,28 @@
+{
+    "name": "radweb/json-exception-formatter",
+    "description": "JSON for your Exceptions",
+	"license": "MIT",
+    "authors": [
+        {
+            "name": "Dan Harper",
+            "email": "hello@danharper.me"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.1.*",
+	    "illuminate/http": "4.1.*"
+    },
+	"require-dev": {
+		"phpspec/phpspec": "2.0.*@dev"
+	},
+    "autoload": {
+        "psr-0": {
+            "Radweb\\JsonExceptionFormatter": "src/"
+        }
+    },
+	"config": {
+		"bin-dir": "bin"
+	},
+    "minimum-stability": "stable"
+}
