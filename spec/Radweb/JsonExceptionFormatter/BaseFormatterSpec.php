@@ -6,11 +6,11 @@ use RuntimeException;
 
 class BaseFormatterSpec extends ObjectBehavior {
 
-    function it_is_initializable()
-    {
-        $this->shouldHaveType('Radweb\JsonExceptionFormatter\BaseFormatter');
-	    $this->shouldImplement('Radweb\JsonExceptionFormatter\FormatterInterface');
-    }
+	function it_is_initializable()
+	{
+		$this->shouldHaveType('Radweb\JsonExceptionFormatter\BaseFormatter');
+		$this->shouldImplement('Radweb\JsonExceptionFormatter\FormatterInterface');
+	}
 
 	function it_formats_a_response_from_an_exception()
 	{

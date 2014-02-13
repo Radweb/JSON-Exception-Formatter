@@ -14,21 +14,21 @@ class Displayer
 		$this->formatter = $formatter;
 	}
 
-    public function display(Exception $exception, $debugMode = true)
-    {
-	    $status = $exception instanceof HttpExceptionInterface ? $exception->getStatusCode() : 500;
-	    $headers = $exception instanceof HttpExceptionInterface ? $exception->getHeaders() : array();
+	public function display(Exception $exception, $debugMode = true)
+	{
+		$status = $exception instanceof HttpExceptionInterface ? $exception->getStatusCode() : 500;
+		$headers = $exception instanceof HttpExceptionInterface ? $exception->getHeaders() : array();
 
-	    if ($debugMode)
-	    {
-		    $response = $this->formatter->formatDebug($exception);
-	    }
-	    else
-	    {
-		    $response = $this->formatter->formatPlain($exception);
-	    }
+		if ($debugMode)
+		{
+			$response = $this->formatter->formatDebug($exception);
+		}
+		else
+		{
+			$response = $this->formatter->formatPlain($exception);
+		}
 
-        return new JsonResponse($response, $status, $headers);
-    }
+		return new JsonResponse($response, $status, $headers);
+	}
 
 }

@@ -14,10 +14,10 @@ class DisplayerSpec extends ObjectBehavior {
 		$this->beConstructedWith($formatter);
 	}
 
-    function it_is_initializable()
-    {
-        $this->shouldHaveType('Radweb\JsonExceptionFormatter\Displayer');
-    }
+	function it_is_initializable()
+	{
+		$this->shouldHaveType('Radweb\JsonExceptionFormatter\Displayer');
+	}
 
 	function it_returns_a_JsonResponse(Exception $exception)
 	{
