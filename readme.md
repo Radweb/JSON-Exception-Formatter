@@ -1,6 +1,6 @@
 [<img src="http://i.imgur.com/7BSeLZL.png" align="right" height="60">](http://radweb.co.uk)
 
-[![Latest Stable Version](https://poser.pugx.org/radweb/json-exception-formatter/v/stable.png)](https://packagist.org/packages/radweb/json-exception-formatter) [![License](https://poser.pugx.org/radweb/json-exception-formatter/license.png)](https://packagist.org/packages/radweb/json-exception-formatter)
+[![Build Status](https://travis-ci.org/Radweb/JSON-Exception-Formatter.png?branch=master)](https://travis-ci.org/Radweb/JSON-Exception-Formatter) [![Latest Stable Version](https://poser.pugx.org/radweb/json-exception-formatter/v/stable.png)](https://packagist.org/packages/radweb/json-exception-formatter) [![License](https://poser.pugx.org/radweb/json-exception-formatter/license.png)](https://packagist.org/packages/radweb/json-exception-formatter)
 
 # Laravel JSON Exception Formatter
 
